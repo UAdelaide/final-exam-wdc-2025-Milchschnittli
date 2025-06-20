@@ -78,8 +78,11 @@ app.get('/api/owner/dogs', async (req, res) => {
     try {
         const [rows] = await pool.query(
             'SELECT dog_id, name FROM Dogs WHERE owner_id = ?',
-            
-        )
+            [req.session.user.id]
+        );
+        res.json(rows);
+    } catch (err) {
+        
     }
 })
 
