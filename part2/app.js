@@ -27,7 +27,9 @@ app.use('/api/users', userRoutes);
 // Login Routes
 const pool = require('./db');
 
-app.post('/login')
+app.post('/login', async (this.request, res) => {
+    const { username, password }
+})
 
 // Export the app instead of listening here
 module.exports = app;
