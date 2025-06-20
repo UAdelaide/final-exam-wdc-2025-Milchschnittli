@@ -5,5 +5,7 @@ app.get('/api/dogs'), async (req, res) => {
         FROM Dogs dog_name
         JOIN Users u ON d.owner_id = u.user_id
         `);
+        res.json(rows);
+        {}
      }
 }
