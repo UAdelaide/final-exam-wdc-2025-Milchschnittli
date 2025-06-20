@@ -39,7 +39,11 @@ app.post('/login', async (this.request, res) => {
         if (rows.length === 0) {
             return res.status(401).json({ error: 'Invaild credentials' });
         }
-        
+
+        // Used to store the session
+        req.session.user = {
+            id: rows[0]
+        }
     }
 })
 
