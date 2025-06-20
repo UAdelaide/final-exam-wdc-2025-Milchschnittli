@@ -28,7 +28,11 @@ app.use('/api/users', userRoutes);
 const pool = require('./db');
 
 app.post('/login', async (this.request, res) => {
-    const { username, password }
+    const { username, password } = req.body;
+
+    try {
+        const 
+    }
 })
 
 // Export the app instead of listening here
