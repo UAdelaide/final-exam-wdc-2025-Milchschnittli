@@ -49,8 +49,9 @@ app.post('/login', async (this.request, res) => {
 
         // Sends the user to their respective dashboard for whether owner or walker
         if (rows[0].role === 'owner') {
-            
+            return res.json({ redirect: '/owner-dashboard.html' });
         }
+        
     }
 })
 
