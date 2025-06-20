@@ -61,7 +61,7 @@ app.post('/login', async (req, res) => {
 //Logout Route
 app.post('/logout', (req, res) => {
     req.session.destroy((err)) => {
-        return res.status(500).
+        return res.status(500).json({ error: 'Logout failed' });
     }
 })
 
