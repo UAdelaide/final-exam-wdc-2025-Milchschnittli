@@ -86,11 +86,11 @@ app.get('/api/owner/dogs', async (req, res) => {
 });
 
 // To get current session user
-app.get('/api/users/me', (req.res) => {
+app.get('/api/users/me', (req, res) => {
     if (!req.session.user) {
-        return res.status(401).json({ error: })
+        return res.status(401).json({ error: 'Not logged in'});
     }
-})
+});
 
 // Export the app instead of listening here
 module.exports = app;
