@@ -70,6 +70,8 @@
         try {
           const res = await fetch('/api/dogs');
           const dogs = await res.json();
+
+          const dogList = await Promise.all(dogs.map)
         }
       }
       async login() {
