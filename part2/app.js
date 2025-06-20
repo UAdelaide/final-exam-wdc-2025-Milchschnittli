@@ -31,7 +31,7 @@ app.post('/login', async (this.request, res) => {
     const { username, password } = req.body;
 
     try {
-        const 
+        const [rows] = await pool.query()
     }
 })
 
