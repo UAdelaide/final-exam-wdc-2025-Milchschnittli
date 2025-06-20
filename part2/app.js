@@ -3,7 +3,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-// Session Middleware 
+// Session Middleware requirement
 const session = require('express-session');
 
 // Middleware
@@ -23,6 +23,9 @@ const userRoutes = require('./routes/userRoutes');
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
+
+// Login Routes
+const
 
 // Export the app instead of listening here
 module.exports = app;
