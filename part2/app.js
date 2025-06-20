@@ -53,7 +53,6 @@ app.post('/login', async (req, res) => {
         }
             return res.json({ redirect: '/walker-dashboard.html' });
     } catch (err) {
-        console.error('Login route error:', err);
         res.status(500).json({ error: 'Login failed ' });
     }
 });
