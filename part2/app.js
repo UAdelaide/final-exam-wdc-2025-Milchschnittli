@@ -36,7 +36,9 @@ app.post('/login', async (this.request, res) => {
             [username, password]
         );
 
-        if (rows.length)
+        if (rows.length === 0) {
+            return res.status(401).json({})
+        }
     }
 })
 
