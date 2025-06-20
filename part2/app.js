@@ -55,9 +55,9 @@ app.post('/login', async (this.request, res) => {
         }
     } catch (err) {
         console.error(err);
-        res.status(500).json()
+        res.status(500).json({ error: 'Login failed '});
     }
-})
+});
 
 // Export the app instead of listening here
 module.exports = app;
