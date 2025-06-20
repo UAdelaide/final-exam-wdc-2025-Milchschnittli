@@ -69,7 +69,9 @@ app.post('/logout', (req, res) => {
     });
 });
 
-//Backend route for 
+// Backend route to return session user's dogs
+app.get('')
+
 
 // Export the app instead of listening here
 module.exports = app;
