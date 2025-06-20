@@ -31,7 +31,7 @@ app.get('/api/dogs', async (req, res) => {
         const [rows] = await pool.query(`
             SELECT
                 d.dog_id,
-                d.dog_name,
+                d.name AS dog_name,
                 d.size,
                 u.username AS owner_username
             FROM Dogs d
@@ -39,7 +39,7 @@ app.get('/api/dogs', async (req, res) => {
             `);
             res.json(rows);
     } catch (err) {
-        console.error('Error fetching all dogs:', err);
+
         res.status(500).json({ error: 'Failed to retrieve all dog data ' });
     }
 });
