@@ -58,7 +58,7 @@ app.post('/login', async (req, res) => {
     }
 });
 
-//Logout Route
+// Logout Route
 app.post('/logout', (req, res) => {
     req.session.destroy((err) => {
     if (err) {
