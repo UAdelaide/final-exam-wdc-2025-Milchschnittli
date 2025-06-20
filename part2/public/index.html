@@ -69,7 +69,9 @@
           } else {
             this.error = data.error;
           }
-        } 
+        } catch (err) {
+          this.error = 'Login request failed.';
+        }
       }
     }
   </script>
