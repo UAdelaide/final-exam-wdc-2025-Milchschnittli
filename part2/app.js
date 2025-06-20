@@ -24,7 +24,9 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
-// Dog 
+// Images for all Dogs API Route
+
+
 
 // Login Routes
 const pool = require('./db');
