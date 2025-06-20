@@ -45,6 +45,11 @@ app.post('/login', async (this.request, res) => {
             id: rows[0].user_id,
             username: rows[0].username,
             role: rows[0].role
+        };
+
+        // Sends the user to their respective dashboard for whether owner or walker
+        if (rows[0].role === 'owner') {
+            
         }
     }
 })
