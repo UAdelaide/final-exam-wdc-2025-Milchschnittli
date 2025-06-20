@@ -85,5 +85,8 @@ app.get('/api/owner/dogs', async (req, res) => {
     }
 });
 
+// To get current session user
+
+
 // Export the app instead of listening here
 module.exports = app;
