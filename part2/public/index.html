@@ -68,7 +68,8 @@
     methods: {
       async loadDogsWithImages(){
         try {
-          const res = await fetch
+          const res = await fetch('/api/dogs');
+          const dogs = await res.json();
         }
       }
       async login() {
