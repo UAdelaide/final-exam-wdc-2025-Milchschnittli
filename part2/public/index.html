@@ -61,10 +61,12 @@
           message: 'Welcome to the Dog Walking Service!',
           username: '',
           password: '',
-          error: ''
+          error: '',
+          allDogs: []
         };
       },
     methods: {
+      
       async login() {
         try {
           const res = await fetch('/login', {
