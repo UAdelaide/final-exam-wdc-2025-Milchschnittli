@@ -8,13 +8,6 @@
             body {
                 background: linear-gradient(90deg,rgba(27, 36, 0, 1) 0%, rgba(121, 9, 72, 1) 35%, rgba(255, 140, 0, 1) 100%);
                 font-family: 'Helvetica', sans-serif;
-                animation: flash 4s infinite alternate;
-            }
-            @keyframes flash {
-                0% { background-color: red; }
-                33% { background-color: green; }
-                66% { background-color: blue;}
-                100% { background-color: red; }
             }
             button {
                 font-size: 24px;
@@ -30,7 +23,7 @@
             <h1 style="text-align: center; color: white;"> Click here for the Dog of the day!</h1>
             <button @click="getDog" type="button"> See another Dog! (click here)</button>
             <p style="font-size: 18px; color:white;">Dog name: Bingo</p>
-            <img v-if="dogImage" :src="dogImage" alt="Random dog image">
+            <img v-if="dogImage" :src="dogImage" src="dogImage" alt="Random dog image">
             <button @click="getDog" type="button">Click here for another Dog!</button>
         </div>
 
