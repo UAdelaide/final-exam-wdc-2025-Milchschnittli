@@ -25,7 +25,9 @@ app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
 // Images for all Dogs API Route
-app.get('/api/users)
+app.get('/api/dogs', async (req, res) => {
+    
+})
 
 
 // Login Routes
