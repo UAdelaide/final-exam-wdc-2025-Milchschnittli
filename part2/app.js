@@ -27,7 +27,7 @@ app.use('/api/users', userRoutes);
 // Login Routes
 const pool = require('./db');
 
-app.post('/login', async (this.request, res) => {
+app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
     try {
