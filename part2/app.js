@@ -11,7 +11,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 // Session Middleware
 app.use(session({
     secret: 'myDogSecret123',
-    }))
+    resave: false,
+    saveUnititialized: true
+}));
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
