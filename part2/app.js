@@ -70,7 +70,9 @@ app.post('/logout', (req, res) => {
 });
 
 // Backend route to return session user's dogs
-app.get('')
+app.get('/api/owner/dogs', async (req, res) => {
+    
+})
 
 
 // Export the app instead of listening here
