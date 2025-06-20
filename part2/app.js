@@ -65,8 +65,8 @@ app.post('/logout', (req, res) => {
     }
 
     res.clearCookie('connect.sid');
-    res.
-})
+    res.json({ message: 'Logged out', redirect: '/' });
+});
 
 // Export the app instead of listening here
 module.exports = app;
