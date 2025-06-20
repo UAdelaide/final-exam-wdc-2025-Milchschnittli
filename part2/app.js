@@ -53,7 +53,6 @@ app.post('/login', async (req, res) => {
         }
             return res.json({ redirect: '/walker-dashboard.html' });
     } catch (err) {
-        console.error(err);
         res.status(500).json({ error: 'Login failed ' });
     }
 });
@@ -72,7 +71,7 @@ app.post('/logout', (req, res) => {
 // Backend route to return session user's dogs
 app.get('/api/owner/dogs', async (req, res) => {
     if (!req.session.user || req.session.user.role !== 'owner') {
-    return res.status(401).json({ error: 'Unauthorized '});
+    return res.status(401).json({ error: 'Unauthorized ' });
     }
 
     try {
