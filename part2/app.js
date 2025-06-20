@@ -9,7 +9,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Session Middleware
-app.use(session({}))
+app.use(session({
+    secret: 'myDogSecret123',
+    }))
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
