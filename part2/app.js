@@ -24,6 +24,8 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
+// Dog 
+
 // Login Routes
 const pool = require('./db');
 
