@@ -43,7 +43,8 @@ app.post('/login', async (this.request, res) => {
         // Used to store the session
         req.session.user = {
             id: rows[0].user_id,
-            username: rows[0]
+            username: rows[0].username,
+            role: rows[0]
         }
     }
 })
