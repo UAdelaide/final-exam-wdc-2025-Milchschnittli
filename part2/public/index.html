@@ -52,7 +52,9 @@
     },
     methods: {
       async login() {
-        try
+        try {
+          const res = await fetch('/login', {})
+        }
       }
     }
   </script>
