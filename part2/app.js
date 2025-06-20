@@ -76,7 +76,7 @@ app.get('/api/owner/dogs', async (req, res) => {
     }
 
     try {
-        const [rows] = await
+        const [rows] = await pool.query()
     }
 })
 
