@@ -50,9 +50,8 @@ app.post('/login', async (req, res) => {
         // Sends the user to their respective dashboard for whether owner or walker
         if (rows[0].role === 'owner') {
             return res.json({ redirect: '/owner-dashboard.html' });
-        {
-            return res.json({ redirect: '/walker-dashboard.html' });
         }
+            return res.json({ redirect: '/walker-dashboard.html' });
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Login failed ' });
