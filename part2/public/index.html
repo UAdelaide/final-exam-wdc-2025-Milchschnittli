@@ -67,9 +67,9 @@
           if (res.ok) {
             window.location.href = data.redirect;
           } else {
-            
+            this.error = data.error;
           }
-        }
+        } 
       }
     }
   </script>
