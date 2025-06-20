@@ -36,7 +36,7 @@ app.get('api/walkers/summary', async(req, res) => {
         (
             SELECT COUNT(*)
             FROM WalkRequests wr
-            
+            JOIN WalkRequests
         )
         )
     }
