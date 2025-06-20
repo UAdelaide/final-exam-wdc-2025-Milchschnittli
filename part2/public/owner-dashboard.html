@@ -77,6 +77,10 @@
           location: ''
         });
 
+        const walks = ref([]);
+        const message = ref('');
+        const error = ref('');
+
         async function logout() {
             try {
               const res = await fetch('/logout', {
@@ -92,11 +96,8 @@
               alert('Error logging out');
             }
           }
-        }
 
-        const walks = ref([]);
-        const message = ref('');
-        const error = ref('');
+
 
         async function loadWalks() {
           try {
