@@ -25,7 +25,9 @@ app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
 // Login Routes
-const
+const pool = require('./db');
+
+app.post('/login')
 
 // Export the app instead of listening here
 module.exports = app;
