@@ -44,7 +44,7 @@
         <td>{{ dog.dog_name }}</td>
         <td>{{ dog.size }}</td>
         <td>{{ dog.owner_username }}</td>
-        <td><img :src="dog.photo" src="dogphotos" alt="dog.photo" width="100" /></td>
+        <td><img :src="dog.photo" alt="dog.photo" width="100" /></td>
       </tr>
     </tbody>
   </table>
@@ -82,7 +82,7 @@
           console.error('Failed to load dog data', err);
         }
       },
-      
+
     mounted() {
       this.loadDogsWithImages();
     },
