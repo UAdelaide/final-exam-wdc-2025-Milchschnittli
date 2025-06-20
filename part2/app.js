@@ -58,5 +58,8 @@ app.post('/login', async (req, res) => {
     }
 });
 
+//Logout Route
+
+
 // Export the app instead of listening here
 module.exports = app;
