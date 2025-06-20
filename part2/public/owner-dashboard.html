@@ -80,7 +80,9 @@
         methods: {
           async logout(){
             try {
-              
+              const res = await fetch('/logout', {
+                method: 'POST'
+              })
             }
           }
         }
