@@ -27,7 +27,9 @@ app.use('/api/users', userRoutes);
 // Images for all Dogs API Route
 app.get('/api/dogs', async (req, res) => {
     try {
-        const
+        const [rows] = await pool.query(`
+            SELECT
+            d.`)
     }
 })
 
