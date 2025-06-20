@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 require('dotenv').config();
+const pool = require('./db');
 
 const app = express();
 // Session Middleware requirement
@@ -38,13 +39,11 @@ app.get('/api/dogs', async (req, res) => {
             `);
             res.json(rows);
     } catch (err) {
-        console.error('Error fetching all dogs: ', err);
-        res.status(500).json({ error: 'Failed to retrieve all dog data '});
+        res.status(500).json({ error: 'Failed to retrieve all dog data ' });
     }
 });
 
 // Login Routes
-const pool = require('./db');
 
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
