@@ -53,7 +53,6 @@ app.post('/login', async (this.request, res) => {
         } else {
             return res.json({ redirect: '/walker-dashboard.html'});
         }
-
     }
 })
 
