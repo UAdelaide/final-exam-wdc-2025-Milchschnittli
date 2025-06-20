@@ -71,7 +71,9 @@ app.post('/logout', (req, res) => {
 
 // Backend route to return session user's dogs
 app.get('/api/owner/dogs', async (req, res) => {
-    if (!req.session.user || req.session.user.role !== 'owner' )
+    if (!req.session.user || req.session.user.role !== 'owner') {
+    return res.status(401)
+    }
 })
 
 
