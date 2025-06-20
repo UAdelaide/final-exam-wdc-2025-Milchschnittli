@@ -77,8 +77,7 @@
           location: ''
         });
 
-      methods: {
-        async logout() {
+        async function logout() {
             try {
               const res = await fetch('/logout', {
                 method: 'POST'
