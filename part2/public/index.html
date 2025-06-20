@@ -40,19 +40,10 @@
         return {
           message: 'Welcome to the Dog Walking Service!',
           username: '',
-        password: '',
-        error: ''
+          password: '',
+          error: ''
         };
-      }
-    }).mount('#app');
-
-    data() {
-      return {
-        username: '',
-        password: '',
-        error: ''
-      };
-    },
+      },
     methods: {
       async login() {
         try {
