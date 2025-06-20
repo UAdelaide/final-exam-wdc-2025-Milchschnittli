@@ -78,7 +78,7 @@
         });
 
         methods: {
-          async logout(){
+          async logout() {
             try {
               const res = await fetch('/logout', {
                 method: 'POST'
@@ -89,6 +89,8 @@
               } else {
                 alert('Logout failed');
               }
+            } catch (err) {
+              alert('Error logging out');
             }
           }
         }
