@@ -54,7 +54,7 @@
             if (!res.ok) throw new Error('Not authenticated');
             user.value = await res.json();
           } catch (err) {
-            
+            error.value = 'Could not get current user';
           }
         }
 
