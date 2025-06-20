@@ -27,7 +27,7 @@
     <button type="submit" class="btn btn-primary">Log in</button>
   </form>
 
-  </div>
+  <div v-if="error" class="alert alert-danger">{{ error }}</div>
 
 
     <a href="owner-dashboard.html" class="btn btn-outline-primary me-2">Owner Dashboard</a>
