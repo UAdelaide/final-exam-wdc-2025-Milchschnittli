@@ -65,6 +65,9 @@
           allDogs: []
         };
       },
+    mounted() {
+      this.loadDogsWithImages();
+    },
     methods: {
       async loadDogsWithImages(){
         try {
@@ -82,10 +85,6 @@
           console.error('Failed to load dog data', err);
         }
       },
-
-    mounted() {
-      this.loadDogsWithImages();
-    },
       async login() {
         try {
           const res = await fetch('/login', {
