@@ -51,7 +51,7 @@ app.post('/login', async (this.request, res) => {
         if (rows[0].role === 'owner') {
             return res.json({ redirect: '/owner-dashboard.html' });
         } else {
-            return res.json({ redirect: })
+            return res.json({ redirect: '/walker-dashboard.html'});
         }
 
     }
