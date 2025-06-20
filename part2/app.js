@@ -88,7 +88,7 @@ app.get('/api/owner/dogs', async (req, res) => {
 // To get current session user
 app.get('/api/users/me', (req, res) => {
     if (!req.session.user) {
-        return res.status(401).json({ error: 'Not logged in'});
+        return res.status(401).json({ error: 'Not logged in' });
     }
 });
 
