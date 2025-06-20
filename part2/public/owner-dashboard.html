@@ -78,13 +78,13 @@
         });
 
       methods: {
-          async logout() {
+        async logout() {
             try {
               const res = await fetch('/logout', {
                 method: 'POST'
               });
               const data = await res.json();
-              if (res.oj) {
+              if (res.ok) {
                 window.location.href = '/index.html';
               } else {
                 alert('Logout failed');
